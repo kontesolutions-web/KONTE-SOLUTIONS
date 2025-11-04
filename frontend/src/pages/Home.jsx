@@ -215,10 +215,10 @@ const Home = () => {
                     <p className="text-slate-400">Vista previa del dashboard de finanzas</p>
                   </div>
                 </div>
-                <CardContent className="p-8 space-y-6">
+                <CardContent className="p-6 sm:p-8 space-y-6">
                   <div>
-                    <CardTitle className="text-2xl text-white mb-4">Plantilla 1 – Finanzas personales inteligentes</CardTitle>
-                    <ul className="space-y-3 text-slate-300">
+                    <CardTitle className="text-xl sm:text-2xl text-white mb-4">Plantilla 1 – Finanzas personales inteligentes</CardTitle>
+                    <ul className="space-y-3 text-sm sm:text-base text-slate-300">
                       <li className="flex items-start gap-3">
                         <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                         <span>Registra ingresos y gastos fácilmente</span>
@@ -239,10 +239,10 @@ const Home = () => {
                   </div>
                   <div className="pt-4">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className="text-3xl font-bold text-emerald-400">350€</span>
-                      <span className="text-slate-500">Pago único</span>
+                      <span className="text-2xl sm:text-3xl font-bold text-emerald-400">350€</span>
+                      <span className="text-sm sm:text-base text-slate-500">Pago único</span>
                     </div>
-                    <div id="paypal-container-RLXCEUUQ6AJXJ"></div>
+                    <div id="paypal-container-RLXCEUUQ6AJXJ" className="w-full"></div>
                   </div>
                 </CardContent>
               </div>
