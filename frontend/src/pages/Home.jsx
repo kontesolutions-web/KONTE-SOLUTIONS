@@ -91,28 +91,28 @@ const Home = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="space-y-6 sm:space-y-8">
               <div className="inline-block">
-                <span className="px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-sm font-medium">
+                <span className="px-3 sm:px-4 py-1.5 sm:py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-xs sm:text-sm font-medium">
                   Automatización Inteligente
                 </span>
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Automatiza tu negocio con{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
                   Google Sheets
                 </span>
               </h1>
-              <p className="text-xl text-slate-300 leading-relaxed">
+              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
                 Soluciones inteligentes, sin costes de mantenimiento, 100% en tu entorno de Google Workspace.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 hover:scale-105"
+                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 hover:scale-105 font-semibold"
                   onClick={() => document.getElementById('plantillas').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Adquirir plantillas
@@ -121,17 +121,17 @@ const Home = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500 transition-all duration-300"
+                  className="border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500 transition-all duration-300 font-semibold"
                   onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Proyecto personalizado
                 </Button>
               </div>
-              <div className="flex flex-wrap gap-6 pt-4">
+              <div className="flex flex-wrap gap-4 sm:gap-6 pt-2 sm:pt-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center gap-2">
-                    <benefit.icon className="h-5 w-5 text-emerald-400" />
-                    <span className="text-sm text-slate-400">{benefit.text}</span>
+                    <benefit.icon className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-400 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-slate-400">{benefit.text}</span>
                   </div>
                 ))}
               </div>
