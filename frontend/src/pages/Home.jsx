@@ -394,9 +394,9 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-emerald-500/10">
+      <footer className="py-12 px-4 sm:px-6 border-t border-emerald-500/10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
