@@ -199,10 +199,10 @@ const Home = () => {
             <p className="text-sm sm:text-base text-slate-400">Paga una vez, úsala para siempre. Sin mantenimiento ni cuotas ocultas.</p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-8 sm:space-y-12">
             {/* Plantilla 1 - Finanzas */}
             <Card className="bg-slate-900/50 border-emerald-500/20 overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
                 <div 
                   className="aspect-video lg:aspect-auto bg-gradient-to-br from-emerald-500/10 to-teal-500/10 flex items-center justify-center"
                   style={{
