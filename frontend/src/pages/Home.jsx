@@ -376,10 +376,10 @@ const Home = () => {
                 <Button 
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40"
+                  className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 font-semibold"
                 >
                   Enviar mensaje
-                  <Mail className="ml-2 h-5 w-5" />
+                  <Mail className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </form>
               <div className="mt-8 pt-8 border-t border-emerald-500/20 text-center">
