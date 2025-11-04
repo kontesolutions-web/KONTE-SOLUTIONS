@@ -10,23 +10,33 @@ function App() {
     script.src = 'https://www.paypal.com/sdk/js?client-id=BAAWWCo5o3VVrbaYeS_rJ0J5xdA0GcqOjudUYWDoXEvugFi3dOF-jgR8K2EAQmeEb8ceL6HdMUKkdds3OM&components=hosted-buttons&disable-funding=venmo&currency=EUR';
     script.async = true;
     script.onload = () => {
-      // Initialize PayPal buttons when SDK is loaded
-      if (window.paypal) {
-        const financiasContainer = document.getElementById('paypal-container-RLXCEUUQ6AJXJ');
-        const crmContainer = document.getElementById('paypal-container-JLD6ER6RWLBBQ');
-        
-        if (financiasContainer) {
-          window.paypal.HostedButtons({
-            hostedButtonId: "RLXCEUUQ6AJXJ",
-          }).render("#paypal-container-RLXCEUUQ6AJXJ");
+      // Wait a bit for PayPal SDK to fully initialize
+      setTimeout(() => {
+        if (window.paypal && window.paypal.HostedButtons) {
+          const financiasContainer = document.getElementById('paypal-container-RLXCEUUQ6AJXJ');
+          const crmContainer = document.getElementById('paypal-container-JLD6ER6RWLBBQ');
+          
+          if (financiasContainer) {
+            try {
+              window.paypal.HostedButtons({
+                hostedButtonId: "RLXCEUUQ6AJXJ",
+              }).render("#paypal-container-RLXCEUUQ6AJXJ");
+            } catch (err) {
+              console.error('Error rendering PayPal button for Finanzas:', err);
+            }
+          }
+          
+          if (crmContainer) {
+            try {
+              window.paypal.HostedButtons({
+                hostedButtonId: "JLD6ER6RWLBBQ",
+              }).render("#paypal-container-JLD6ER6RWLBBQ");
+            } catch (err) {
+              console.error('Error rendering PayPal button for CRM:', err);
+            }
+          }
         }
-        
-        if (crmContainer) {
-          window.paypal.HostedButtons({
-            hostedButtonId: "JLD6ER6RWLBBQ",
-          }).render("#paypal-container-JLD6ER6RWLBBQ");
-        }
-      }
+      }, 500);
     };
     document.head.appendChild(script);
 
