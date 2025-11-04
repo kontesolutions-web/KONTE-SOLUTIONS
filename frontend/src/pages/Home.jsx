@@ -159,16 +159,16 @@ const Home = () => {
       </section>
 
       {/* Sobre mí / Servicios */}
-      <section id="servicios" className="py-20 px-6">
+      <section id="servicios" className="py-16 sm:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold text-white">Mis Servicios</h2>
-            <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">Mis Servicios</h2>
+            <p className="text-base sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed px-4">
               Soy especialista en Google Sheets, Apps Script, AppSheet e integraciones web con bases de datos, 
               ayudando a empresas y emprendedores a digitalizar y automatizar procesos sin depender de software costoso.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
