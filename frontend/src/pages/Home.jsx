@@ -250,12 +250,12 @@ const Home = () => {
 
             {/* Plantilla 2 - CRM */}
             <Card className="bg-slate-900/50 border-emerald-500/20 overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-8">
+              <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
                 <div className="order-2 lg:order-1">
-                  <CardContent className="p-8 space-y-6">
+                  <CardContent className="p-6 sm:p-8 space-y-6">
                     <div>
-                      <CardTitle className="text-2xl text-white mb-4">Plantilla 2 – CRM y gestión completa</CardTitle>
-                      <ul className="space-y-3 text-slate-300">
+                      <CardTitle className="text-xl sm:text-2xl text-white mb-4">Plantilla 2 – CRM y gestión completa</CardTitle>
+                      <ul className="space-y-3 text-sm sm:text-base text-slate-300">
                         <li className="flex items-start gap-3">
                           <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                           <span>Base de datos en Google Sheets + código Apps Script + implementación web</span>
@@ -276,10 +276,10 @@ const Home = () => {
                     </div>
                     <div className="pt-4">
                       <div className="flex items-center gap-4 mb-4">
-                        <span className="text-3xl font-bold text-emerald-400">350€</span>
-                        <span className="text-slate-500">Pago único</span>
+                        <span className="text-2xl sm:text-3xl font-bold text-emerald-400">350€</span>
+                        <span className="text-sm sm:text-base text-slate-500">Pago único</span>
                       </div>
-                      <div id="paypal-container-JLD6ER6RWLBBQ"></div>
+                      <div id="paypal-container-JLD6ER6RWLBBQ" className="w-full"></div>
                     </div>
                   </CardContent>
                 </div>
