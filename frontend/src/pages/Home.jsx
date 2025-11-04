@@ -191,12 +191,12 @@ const Home = () => {
       </section>
 
       {/* Plantillas Premium */}
-      <section id="plantillas" className="py-20 px-6 bg-slate-900/30">
+      <section id="plantillas" className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-900/30">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold text-white">Plantillas listas para usar</h2>
-            <p className="text-2xl text-emerald-400 font-semibold">Solo 350€ cada una</p>
-            <p className="text-slate-400">Paga una vez, úsala para siempre. Sin mantenimiento ni cuotas ocultas.</p>
+          <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4 px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">Plantillas listas para usar</h2>
+            <p className="text-xl sm:text-2xl text-emerald-400 font-semibold">Solo 350€ cada una</p>
+            <p className="text-sm sm:text-base text-slate-400">Paga una vez, úsala para siempre. Sin mantenimiento ni cuotas ocultas.</p>
           </div>
 
           <div className="space-y-12">
