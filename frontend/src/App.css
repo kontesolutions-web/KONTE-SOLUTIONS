@@ -78,3 +78,26 @@ img {
     transform: translateY(-10px);
   }
 }
+
+/* PayPal Button Styling - Ensure white text */
+div[id^="paypal-container"] {
+  margin-top: 1rem;
+}
+
+div[id^="paypal-container"] iframe {
+  min-height: 45px;
+}
+
+/* Force PayPal button text to be visible */
+.paypal-button,
+.paypal-button-label {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Ensure PayPal buttons are responsive */
+@media (max-width: 768px) {
+  div[id^="paypal-container"] {
+    width: 100%;
+  }
+}
