@@ -21,6 +21,50 @@ body {
   background-attachment: fixed;
 }
 
+/* Smooth section transitions */
+section {
+  position: relative;
+}
+
+section::before,
+section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+section::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(10, 10, 16, 0.8), transparent);
+}
+
+section::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(10, 10, 16, 0.8), transparent);
+}
+
+/* Infinite scroll carousel animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
 .App {
   min-height: 100vh;
 }
