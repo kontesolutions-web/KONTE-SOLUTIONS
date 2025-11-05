@@ -21,31 +21,10 @@ body {
   background-attachment: fixed;
 }
 
-/* Smooth section transitions - Horizontal gradients */
+/* Remove all section backgrounds for uniform color */
 section {
   position: relative;
-  background: radial-gradient(ellipse at center, transparent 0%, rgba(10, 10, 16, 0.3) 100%);
-}
-
-section::before,
-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 200px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-section::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(10, 10, 16, 0.9), transparent);
-}
-
-section::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(10, 10, 16, 0.9), transparent);
+  background: transparent !important;
 }
 
 /* Infinite scroll carousel animation */
