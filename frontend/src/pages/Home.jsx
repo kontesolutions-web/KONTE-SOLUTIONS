@@ -502,7 +502,7 @@ const Home = () => {
       </section>
 
       {/* Formulario de Contacto */}
-      <section id="contacto" className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900/30">
+      <section id="contacto" className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 space-y-4 sm:space-y-6 px-4">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Hablemos de tu proyecto</h2>
