@@ -416,40 +416,49 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 sm:px-6 border-t border-emerald-500/10">
+      <footer className="py-16 px-4 sm:px-6 border-t border-emerald-500/10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mb-10">
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-3 mb-6">
+                <img 
+                  src="/images/logo.png" 
+                  alt="KONTE Logo" 
+                  className="w-12 h-12 object-contain"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextElementSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center" style={{display: 'none'}}>
                   <span className="text-slate-950 font-bold text-xl">K</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white">KONTE</h3>
-                  <p className="text-xs text-emerald-400 tracking-wider">SOLUTIONS</p>
+                  <h3 className="text-xl font-bold text-white">KONTE</h3>
+                  <p className="text-sm text-emerald-400 tracking-wider">SOLUTIONS</p>
                 </div>
               </div>
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-300 text-base leading-relaxed">
                 Impulsa tu negocio con soluciones inteligentes sobre Google Sheets.
               </p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Enlaces rápidos</h4>
-              <ul className="space-y-2">
-                <li><a href="#servicios" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Servicios</a></li>
-                <li><a href="#plantillas" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Plantillas</a></li>
-                <li><a href="#contacto" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Contacto</a></li>
+              <h4 className="text-white text-xl font-bold mb-6">Enlaces rápidos</h4>
+              <ul className="space-y-3">
+                <li><a href="#servicios" className="text-slate-300 hover:text-emerald-400 transition-colors text-base font-medium">Servicios</a></li>
+                <li><a href="#plantillas" className="text-slate-300 hover:text-emerald-400 transition-colors text-base font-medium">Plantillas</a></li>
+                <li><a href="#contacto" className="text-slate-300 hover:text-emerald-400 transition-colors text-base font-medium">Contacto</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Contacto</h4>
-              <a href="mailto:konte.solutions@gmail.com" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm block">
+              <h4 className="text-white text-xl font-bold mb-6">Contacto</h4>
+              <a href="mailto:konte.solutions@gmail.com" className="text-slate-300 hover:text-emerald-400 transition-colors text-base font-medium block">
                 konte.solutions@gmail.com
               </a>
             </div>
           </div>
           <div className="pt-8 border-t border-emerald-500/10 text-center">
-            <p className="text-slate-500 text-sm">
+            <p className="text-slate-400 text-base">
               © 2025 KONTE SOLUTIONS. Todos los derechos reservados.
             </p>
           </div>
