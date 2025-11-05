@@ -88,13 +88,25 @@ img {
   }
 }
 
-/* PayPal Button Styling - Ensure white text */
+/* PayPal Button Styling - Center and fix display */
 div[id^="paypal-container"] {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  width: 100%;
 }
 
 div[id^="paypal-container"] iframe {
-  min-height: 50px;
+  min-height: 55px !important;
+  max-width: 100%;
+}
+
+div[id^="paypal-container"] > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Force PayPal button text to be visible */
