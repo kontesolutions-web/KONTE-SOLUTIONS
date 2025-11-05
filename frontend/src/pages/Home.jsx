@@ -40,29 +40,19 @@ const Home = () => {
       icon: Calculator,
       title: 'Automatización & Apps Script',
       description: 'Desarrollo personalizado en Google Sheets y Apps Script. Procesos inteligentes que ahorran tiempo y eliminan errores humanos.',
-      features: ['Google Sheets', 'Apps Script', 'Formularios Web'],
-      logos: [
-        { name: 'Google Sheets', url: 'https://www.gstatic.com/images/branding/product/2x/sheets_2020q4_48dp.png' },
-        { name: 'Apps Script', url: 'https://www.gstatic.com/images/branding/product/2x/script_48dp.png' }
-      ]
+      features: ['Google Sheets', 'Apps Script', 'Formularios Web']
     },
     {
       icon: Smartphone,
       title: 'Apps Web & AppSheet',
       description: 'Implementación de aplicaciones web profesionales sin código complejo. Ideal para CRM, gestión de citas y facturación.',
-      features: ['AppSheet', 'Apps Web', 'Bases de Datos'],
-      logos: [
-        { name: 'AppSheet', url: 'https://www.gstatic.com/images/branding/product/2x/appsheet_48dp.png' }
-      ]
+      features: ['AppSheet', 'Apps Web', 'Bases de Datos']
     },
     {
       icon: BarChart3,
       title: 'Dashboards & Reportes',
       description: 'Visualización de datos en tiempo real con Looker Studio. Reportes automáticos personalizados enviados directamente a tu email.',
-      features: ['Looker Studio', 'Reportes', 'Análisis'],
-      logos: [
-        { name: 'Looker Studio', url: 'https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg' }
-      ]
+      features: ['Looker Studio', 'Reportes', 'Análisis']
     }
   ];
 
