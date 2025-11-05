@@ -10,6 +10,15 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(61, 213, 152, 0.08), transparent 60%),
+    radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.06), transparent 65%),
+    radial-gradient(circle at 40% 30%, rgba(200, 200, 200, 0.12), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(220, 220, 220, 0.08), transparent 70%),
+    radial-gradient(circle at 90% 85%, rgba(240, 240, 240, 0.06), transparent 65%),
+    linear-gradient(135deg, #0a0a10 0%, #0f1419 50%, #1a1d24 100%);
+  background-attachment: fixed;
 }
 
 .App {
@@ -85,7 +94,7 @@ div[id^="paypal-container"] {
 }
 
 div[id^="paypal-container"] iframe {
-  min-height: 45px;
+  min-height: 50px;
 }
 
 /* Force PayPal button text to be visible */
