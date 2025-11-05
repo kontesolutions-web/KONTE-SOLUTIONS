@@ -203,48 +203,57 @@ const Home = () => {
             <p className="text-base sm:text-lg lg:text-xl text-slate-300 font-medium">Paga una vez, úsala para siempre. Sin mantenimiento ni cuotas ocultas.</p>
           </div>
 
-          <div className="space-y-8 sm:space-y-12">
+          <div className="space-y-10 sm:space-y-16">
             {/* Plantilla 1 - Finanzas */}
-            <Card className="bg-slate-900/50 border-emerald-500/20 overflow-hidden">
+            <Card className="bg-slate-900/70 border-2 border-emerald-500/30 overflow-hidden hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300">
               <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
                 <div 
-                  className="aspect-video lg:aspect-auto bg-gradient-to-br from-emerald-500/10 to-teal-500/10 flex items-center justify-center"
+                  className="aspect-video lg:aspect-auto bg-gradient-to-br from-emerald-500/10 to-teal-500/10 flex items-center justify-center p-8"
                   style={{
                     filter: scrollY > 600 ? 'blur(0px)' : `blur(${Math.max(0, 8 - (scrollY - 400) / 50)}px)`,
                     transition: 'filter 0.5s ease-out'
                   }}
                 >
-                  <div className="text-center space-y-4 p-8">
-                    <Calculator className="h-16 w-16 text-emerald-400 mx-auto" />
-                    <p className="text-slate-400">Vista previa del dashboard de finanzas</p>
+                  <img 
+                    src="/images/dashboard-preview.png" 
+                    alt="Dashboard Finanzas" 
+                    className="max-w-full h-auto rounded-lg shadow-xl"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextElementSibling.style.display = 'block';
+                    }}
+                  />
+                  <div className="text-center space-y-4" style={{display: 'none'}}>
+                    <Calculator className="h-20 w-20 text-emerald-400 mx-auto" />
+                    <p className="text-slate-400 text-lg">Vista previa del dashboard de finanzas</p>
                   </div>
                 </div>
-                <CardContent className="p-6 sm:p-8 space-y-6">
-                  <div>
-                    <CardTitle className="text-xl sm:text-2xl text-white mb-4">Plantilla 1 – Finanzas personales inteligentes</CardTitle>
-                    <ul className="space-y-3 text-sm sm:text-base text-slate-300">
-                      <li className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <CardContent className="p-6 sm:p-10 space-y-6 flex flex-col justify-center">
+                  <div className="text-center lg:text-left">
+                    <CardTitle className="text-2xl sm:text-3xl lg:text-4xl text-white mb-6 font-bold">Plantilla 1 – Finanzas personales inteligentes</CardTitle>
+                    <ul className="space-y-4 text-base sm:text-lg lg:text-xl text-slate-300">
+                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
                         <span>Registra ingresos y gastos fácilmente</span>
                       </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
                         <span>Dashboard visual y análisis automático en tiempo real</span>
                       </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
                         <span>Formulario web accesible desde el móvil mediante URL</span>
                       </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
                         <span>Todos los datos en tu propio Google Sheet personal (editable)</span>
                       </li>
                     </ul>
                   </div>
-                  <div className="pt-4">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="text-2xl sm:text-3xl font-bold text-emerald-400">350€</span>
-                      <span className="text-sm sm:text-base text-slate-500">Pago único</span>
+                  <div className="pt-6 text-center lg:text-left">
+                    <div className="flex items-center gap-4 mb-6 justify-center lg:justify-start">
+                      <span className="text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-400">350€</span>
+                      <span className="text-lg sm:text-xl text-slate-400 font-medium">Pago único</span>
                     </div>
                     <div id="paypal-container-RLXCEUUQ6AJXJ" className="w-full"></div>
                   </div>
