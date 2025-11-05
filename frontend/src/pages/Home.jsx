@@ -207,6 +207,21 @@ const Home = () => {
                     <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-500/30 to-teal-500/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-emerald-500/20">
                       <Icon className="h-8 w-8 sm:h-10 sm:w-10 text-emerald-400" />
                     </div>
+                    
+                    {/* Logos de Google */}
+                    <div className="flex gap-3 items-center pb-2">
+                      {service.logos.map((logo, idx) => (
+                        <div key={idx} className="w-12 h-12 bg-white rounded-lg p-2 flex items-center justify-center shadow-md">
+                          <img 
+                            src={logo.url} 
+                            alt={logo.name}
+                            className="w-full h-full object-contain"
+                            title={logo.name}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    
                     <CardTitle className="text-white text-xl sm:text-2xl font-bold">{service.title}</CardTitle>
                     <CardDescription className="text-slate-300 text-base sm:text-lg leading-relaxed">{service.description}</CardDescription>
                     <div className="flex flex-wrap gap-2 pt-2">
