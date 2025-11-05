@@ -197,6 +197,37 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Carousel de Logos Infinito */}
+      <section className="py-12 sm:py-16 overflow-hidden">
+        <div className="mb-8 text-center">
+          <p className="text-slate-400 text-sm sm:text-base font-medium">Confían en nuestras soluciones</p>
+        </div>
+        <div className="relative">
+          <div className="flex gap-8 sm:gap-12 animate-scroll">
+            {/* Duplicamos los logos para efecto infinito */}
+            {[...logoImages, ...logoImages].map((logo, idx) => (
+              <div key={idx} className="flex-shrink-0 w-[200px] sm:w-[400px] h-[100px] sm:h-[200px] bg-white/5 backdrop-blur-sm rounded-xl border border-slate-700/30 flex items-center justify-center p-4 sm:p-6 hover:bg-white/10 transition-colors">
+                <img 
+                  src={logo}
+                  alt={`Partner logo ${(idx % logoImages.length) + 1}`}
+                  className="w-full h-full object-contain opacity-70 hover:opacity-100 transition-opacity"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    const parent = e.target.parentElement;
+                    if (!parent.querySelector('.placeholder-text')) {
+                      const placeholder = document.createElement('div');
+                      placeholder.className = 'placeholder-text text-slate-500 text-center text-sm';
+                      placeholder.innerHTML = `Logo ${(idx % logoImages.length) + 1}<br/><span class="text-xs">400x200px</span>`;
+                      parent.appendChild(placeholder);
+                    }
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Sobre mí / Servicios */}
       <section id="servicios" className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
