@@ -4,6 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Label } from '../components/ui/label';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '../components/ui/carousel';
 import { 
   Calculator, 
   Users, 
