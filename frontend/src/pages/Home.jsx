@@ -474,17 +474,17 @@ const Home = () => {
           <div className="flex gap-6 sm:gap-8 animate-scroll">
             {/* Duplicamos las reseñas para efecto infinito */}
             {[...testimonialImages, ...testimonialImages].map((review, idx) => (
-              <div key={idx} className="flex-shrink-0 w-[300px] sm:w-[400px] h-[225px] sm:h-[300px] bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl border-2 border-emerald-500/20 overflow-hidden shadow-xl hover:shadow-emerald-500/20 hover:border-emerald-500/40 transition-all duration-300 hover:scale-105">
+              <div key={idx} className="flex-shrink-0 w-[300px] sm:w-[400px] h-[225px] sm:h-[300px] overflow-hidden">
                 <img 
                   src={review}
                   alt={`Reseña cliente ${(idx % testimonialImages.length) + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     const parent = e.target.parentElement;
                     if (!parent.querySelector('.placeholder-content')) {
                       parent.innerHTML = `
-                        <div class="placeholder-content flex flex-col items-center justify-center h-full p-6 text-center">
+                        <div class="placeholder-content flex flex-col items-center justify-center h-full p-6 text-center bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl border-2 border-emerald-500/20">
                           <svg class="w-16 h-16 text-emerald-400/30 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                           </svg>
