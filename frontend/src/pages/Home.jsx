@@ -362,46 +362,46 @@ const Home = () => {
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-white">Nombre</Label>
+                <div className="space-y-3">
+                  <Label htmlFor="name" className="text-white text-base sm:text-lg font-medium">Nombre</Label>
                   <Input 
                     id="name"
                     name="name"
                     type="text" 
                     required
-                    className="bg-slate-950/50 border-emerald-500/20 text-white focus:border-emerald-500 transition-colors"
+                    className="bg-slate-950/50 border-emerald-500/20 text-white text-base sm:text-lg focus:border-emerald-500 transition-colors py-6"
                     placeholder="Tu nombre completo"
                   />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-white">Correo electrónico</Label>
+                <div className="space-y-3">
+                  <Label htmlFor="email" className="text-white text-base sm:text-lg font-medium">Correo electrónico</Label>
                   <Input 
                     id="email"
                     name="email"
                     type="email" 
                     required
-                    className="bg-slate-950/50 border-emerald-500/20 text-white focus:border-emerald-500 transition-colors"
+                    className="bg-slate-950/50 border-emerald-500/20 text-white text-base sm:text-lg focus:border-emerald-500 transition-colors py-6"
                     placeholder="tu@email.com"
                   />
                 </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-white">Mensaje / Detalles del proyecto</Label>
+                <div className="space-y-3">
+                  <Label htmlFor="message" className="text-white text-base sm:text-lg font-medium">Mensaje / Detalles del proyecto</Label>
                   <Textarea 
                     id="message"
                     name="message"
                     required
                     rows={6}
-                    className="bg-slate-950/50 border-emerald-500/20 text-white focus:border-emerald-500 transition-colors resize-none"
+                    className="bg-slate-950/50 border-emerald-500/20 text-white text-base sm:text-lg focus:border-emerald-500 transition-colors resize-none"
                     placeholder="Cuéntame sobre tu proyecto..."
                   />
                 </div>
                 <Button 
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 font-semibold"
+                  className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white text-lg sm:text-xl border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 font-bold py-7"
                 >
                   Enviar mensaje
-                  <Mail className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <Mail className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
                 </Button>
               </form>
               <div className="mt-8 pt-8 border-t border-emerald-500/20 text-center">
