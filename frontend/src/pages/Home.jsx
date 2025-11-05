@@ -97,28 +97,28 @@ const Home = () => {
                   Automatización Inteligente
                 </span>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
                 Automatiza tu negocio con{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
                   Google Sheets
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
+              <p className="text-xl sm:text-2xl lg:text-3xl text-slate-300 leading-relaxed font-medium">
                 Soluciones inteligentes, sin costes de mantenimiento, 100% en tu entorno de Google Workspace.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 hover:scale-105 font-semibold"
+                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white text-lg sm:text-xl border-0 shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:shadow-emerald-500/40 hover:scale-105 font-bold py-6 sm:py-7 px-8 sm:px-10"
                   onClick={() => document.getElementById('plantillas').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Adquirir plantillas
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-6 w-6" />
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-500 transition-all duration-300 font-semibold"
+                  className="border-2 border-emerald-500/40 text-emerald-400 text-lg sm:text-xl hover:bg-emerald-500/10 hover:border-emerald-500 transition-all duration-300 font-bold py-6 sm:py-7 px-8 sm:px-10"
                   onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
                 >
                   Proyecto personalizado
