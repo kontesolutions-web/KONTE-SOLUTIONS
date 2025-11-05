@@ -238,7 +238,7 @@ const Home = () => {
       </section>
 
       {/* Carousel de Logos Infinito */}
-      <section className="py-12 sm:py-16 overflow-hidden bg-slate-900/20">
+      <section className="py-12 sm:py-16 overflow-hidden">
         <div className="mb-8 text-center">
           <p className="text-slate-400 text-sm sm:text-base font-medium">Confían en nuestras soluciones</p>
         </div>
