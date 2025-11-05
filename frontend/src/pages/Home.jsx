@@ -227,9 +227,9 @@ const Home = () => {
           <div className="space-y-10 sm:space-y-16">
             {/* Plantilla 1 - Finanzas */}
             <Card className="bg-slate-900/70 border-2 border-emerald-500/30 overflow-hidden hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300">
-              <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
+              <div className="grid lg:grid-cols-2 gap-0">
                 <div 
-                  className="aspect-video lg:aspect-auto bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center p-8"
+                  className="aspect-video lg:aspect-auto bg-slate-800/50 flex items-center justify-center p-8"
                   style={{
                     filter: scrollY > 600 ? 'blur(0px)' : `blur(${Math.max(0, 8 - (scrollY - 400) / 50)}px)`,
                     transition: 'filter 0.5s ease-out'
@@ -248,13 +248,13 @@ const Home = () => {
                                 if (idx === 0) {
                                   e.target.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = `
                                     <div class="text-center space-y-4 py-12">
-                                      <div class="w-20 h-20 mx-auto bg-slate-700 rounded-full flex items-center justify-center">
-                                        <svg class="h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <div class="w-20 h-20 mx-auto bg-emerald-500/20 rounded-full flex items-center justify-center">
+                                        <svg class="h-10 w-10 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                         </svg>
                                       </div>
-                                      <p class="text-slate-600 text-lg font-medium">Vista previa del dashboard de finanzas</p>
-                                      <p class="text-slate-500 text-sm">Coloca tus capturas en /images/</p>
+                                      <p class="text-slate-300 text-lg font-medium">Vista previa del dashboard de finanzas</p>
+                                      <p class="text-slate-400 text-sm">Coloca tus capturas en /images/</p>
                                     </div>
                                   `;
                                 }
@@ -268,32 +268,32 @@ const Home = () => {
                     <CarouselNext className="right-2 bg-white/90 hover:bg-white border-slate-300" />
                   </Carousel>
                 </div>
-                <CardContent className="p-6 sm:p-10 space-y-6 flex flex-col justify-center">
+                <CardContent className="p-8 sm:p-12 space-y-8 flex flex-col justify-center bg-gradient-to-br from-gray-100 to-gray-200">
                   <div className="text-center lg:text-left">
-                    <CardTitle className="text-2xl sm:text-3xl lg:text-4xl text-white mb-6 font-bold">Plantilla 1 – Finanzas personales inteligentes</CardTitle>
-                    <ul className="space-y-4 text-base sm:text-lg lg:text-xl text-slate-300">
-                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
-                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
-                        <span>Registra ingresos y gastos fácilmente</span>
+                    <CardTitle className="text-3xl sm:text-4xl lg:text-5xl text-slate-900 mb-8 font-bold leading-tight">Plantilla 1 – Finanzas personales inteligentes</CardTitle>
+                    <ul className="space-y-5 text-lg sm:text-xl lg:text-2xl text-slate-700">
+                      <li className="flex items-start gap-4 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-7 w-7 sm:h-8 sm:w-8 text-emerald-600 flex-shrink-0 mt-1" />
+                        <span className="font-medium">Registra ingresos y gastos fácilmente</span>
                       </li>
-                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
-                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
-                        <span>Dashboard visual y análisis automático en tiempo real</span>
+                      <li className="flex items-start gap-4 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-7 w-7 sm:h-8 sm:w-8 text-emerald-600 flex-shrink-0 mt-1" />
+                        <span className="font-medium">Dashboard visual y análisis automático en tiempo real</span>
                       </li>
-                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
-                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
-                        <span>Formulario web accesible desde el móvil mediante URL</span>
+                      <li className="flex items-start gap-4 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-7 w-7 sm:h-8 sm:w-8 text-emerald-600 flex-shrink-0 mt-1" />
+                        <span className="font-medium">Formulario web accesible desde el móvil mediante URL</span>
                       </li>
-                      <li className="flex items-start gap-3 text-center lg:text-left justify-center lg:justify-start">
-                        <CheckCircle2 className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
-                        <span>Todos los datos en tu propio Google Sheet personal (editable)</span>
+                      <li className="flex items-start gap-4 text-center lg:text-left justify-center lg:justify-start">
+                        <CheckCircle2 className="h-7 w-7 sm:h-8 sm:w-8 text-emerald-600 flex-shrink-0 mt-1" />
+                        <span className="font-medium">Todos los datos en tu propio Google Sheet personal (editable)</span>
                       </li>
                     </ul>
                   </div>
-                  <div className="pt-6">
-                    <div className="flex items-center gap-4 mb-6 justify-center">
-                      <span className="text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-400">350€</span>
-                      <span className="text-lg sm:text-xl text-slate-400 font-medium">Pago único</span>
+                  <div className="pt-8">
+                    <div className="flex items-center gap-5 mb-8 justify-center">
+                      <span className="text-5xl sm:text-6xl lg:text-7xl font-bold text-emerald-600">350€</span>
+                      <span className="text-xl sm:text-2xl text-slate-600 font-semibold">Pago único</span>
                     </div>
                     <div className="flex justify-center">
                       <div id="paypal-container-RLXCEUUQ6AJXJ" className="w-full max-w-md"></div>
