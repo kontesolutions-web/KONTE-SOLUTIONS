@@ -349,14 +349,14 @@ const Home = () => {
       </section>
 
       {/* Formulario de Contacto */}
-      <section id="contacto" className="py-16 sm:py-20 px-4 sm:px-6 bg-slate-900/30">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12 space-y-3 sm:space-y-4 px-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">Hablemos de tu proyecto</h2>
-            <p className="text-sm sm:text-base text-slate-400">Respondo en menos de 24h</p>
+      <section id="contacto" className="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900/30">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 space-y-4 sm:space-y-6 px-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Hablemos de tu proyecto</h2>
+            <p className="text-lg sm:text-xl lg:text-2xl text-slate-300 font-medium">Respondo en menos de 24h</p>
           </div>
-          <Card className="bg-slate-900/50 border-emerald-500/20 mx-4 sm:mx-0">
-            <CardContent className="p-6 sm:p-8">
+          <Card className="bg-slate-900/70 border-2 border-emerald-500/30 mx-4 sm:mx-0 shadow-xl">
+            <CardContent className="p-6 sm:p-10">
               <form action="https://formsubmit.co/konte.solutions@gmail.com" method="POST" className="space-y-6">
                 <input type="hidden" name="_subject" value="Nueva consulta desde KONTE SOLUTIONS" />
                 <input type="hidden" name="_captcha" value="false" />
