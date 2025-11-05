@@ -46,10 +46,17 @@ Simplemente coloca tus imágenes en esta carpeta con los nombres exactos que se 
 
 ## 🔄 Cómo reemplazar las imágenes:
 
-1. **Prepara tu imagen** con el nombre exacto (logo.png, dashboard-preview.png, o crm-preview.png)
-2. **Copia el archivo** a esta carpeta: `/app/frontend/public/images/`
+1. **Prepara tus imágenes** con los nombres exactos
+2. **Copia los archivos** a esta carpeta: `/app/frontend/public/images/`
 3. **Recarga la página** en tu navegador (Ctrl+R o Cmd+R)
-4. ¡Listo! Tu imagen se mostrará automáticamente
+4. ¡Listo! Tus imágenes se mostrarán automáticamente
+
+## 🎠 Carousel de imágenes:
+
+Cada plantilla tiene un carousel que puede mostrar hasta 3 imágenes:
+- Si solo subes la imagen principal (dashboard-preview.png), mostrará solo esa
+- Si subes dashboard-preview-2.png y dashboard-preview-3.png, aparecerán en el carousel con flechas para navegar
+- Lo mismo aplica para las imágenes del CRM (crm-preview.png, crm-preview-2.png, crm-preview-3.png)
 
 ## 💡 Consejos:
 
