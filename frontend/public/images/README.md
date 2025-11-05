@@ -12,17 +12,37 @@ Simplemente coloca tus imágenes en esta carpeta con los nombres exactos que se 
 - **Formato:** PNG con fondo transparente (recomendado) o JPG
 - **Ubicación en la web:** Header (esquina superior izquierda) y Footer
 
-### **dashboard-preview.png**
-- **Uso:** Vista previa de la Plantilla 1 (Finanzas Personales)
+### **dashboard-preview.png** (Obligatoria)
+- **Uso:** Vista previa principal de la Plantilla 1 (Finanzas Personales)
 - **Tamaño recomendado:** 1200x800px o proporción 3:2
 - **Formato:** PNG o JPG
-- **Ubicación en la web:** Sección de Plantillas - Plantilla 1
+- **Ubicación en la web:** Sección de Plantillas - Plantilla 1 (Primera imagen del carousel)
 
-### **crm-preview.png**
-- **Uso:** Vista previa de la Plantilla 2 (CRM y Gestión)
+### **dashboard-preview-2.png** (Opcional)
+- **Uso:** Segunda imagen del carousel de Finanzas
+- **Tamaño recomendado:** 1200x800px
+- **Formato:** PNG o JPG
+
+### **dashboard-preview-3.png** (Opcional)
+- **Uso:** Tercera imagen del carousel de Finanzas
+- **Tamaño recomendado:** 1200x800px
+- **Formato:** PNG o JPG
+
+### **crm-preview.png** (Obligatoria)
+- **Uso:** Vista previa principal de la Plantilla 2 (CRM y Gestión)
 - **Tamaño recomendado:** 1200x800px o proporción 3:2
 - **Formato:** PNG o JPG
-- **Ubicación en la web:** Sección de Plantillas - Plantilla 2
+- **Ubicación en la web:** Sección de Plantillas - Plantilla 2 (Primera imagen del carousel)
+
+### **crm-preview-2.png** (Opcional)
+- **Uso:** Segunda imagen del carousel de CRM
+- **Tamaño recomendado:** 1200x800px
+- **Formato:** PNG o JPG
+
+### **crm-preview-3.png** (Opcional)
+- **Uso:** Tercera imagen del carousel de CRM
+- **Tamaño recomendado:** 1200x800px
+- **Formato:** PNG o JPG
 
 ## 🔄 Cómo reemplazar las imágenes:
 
