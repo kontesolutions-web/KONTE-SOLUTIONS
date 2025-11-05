@@ -353,35 +353,56 @@ const Home = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="pt-6 text-center lg:text-left">
-                      <div className="flex items-center gap-4 mb-6 justify-center lg:justify-start">
+                    <div className="pt-6">
+                      <div className="flex items-center gap-4 mb-6 justify-center">
                         <span className="text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-400">350€</span>
                         <span className="text-lg sm:text-xl text-slate-400 font-medium">Pago único</span>
                       </div>
-                      <div id="paypal-container-JLD6ER6RWLBBQ" className="w-full"></div>
+                      <div className="flex justify-center">
+                        <div id="paypal-container-JLD6ER6RWLBBQ" className="w-full max-w-md"></div>
+                      </div>
                     </div>
                   </CardContent>
                 </div>
                 <div 
-                  className="order-1 lg:order-2 aspect-video lg:aspect-auto bg-gradient-to-br from-teal-500/10 to-emerald-500/10 flex items-center justify-center p-8"
+                  className="order-1 lg:order-2 aspect-video lg:aspect-auto bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center p-8"
                   style={{
                     filter: scrollY > 1000 ? 'blur(0px)' : `blur(${Math.max(0, 8 - (scrollY - 800) / 50)}px)`,
                     transition: 'filter 0.5s ease-out'
                   }}
                 >
-                  <img 
-                    src="/images/crm-preview.png" 
-                    alt="Sistema CRM" 
-                    className="max-w-full h-auto rounded-lg shadow-xl"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextElementSibling.style.display = 'block';
-                    }}
-                  />
-                  <div className="text-center space-y-4" style={{display: 'none'}}>
-                    <Users className="h-20 w-20 text-emerald-400 mx-auto" />
-                    <p className="text-slate-400 text-lg">Vista previa del sistema CRM</p>
-                  </div>
+                  <Carousel className="w-full max-w-xl">
+                    <CarouselContent>
+                      {templateImages.crm.map((img, idx) => (
+                        <CarouselItem key={idx}>
+                          <div className="p-1">
+                            <img 
+                              src={img}
+                              alt={`Sistema CRM ${idx + 1}`}
+                              className="w-full h-auto rounded-lg shadow-2xl"
+                              onError={(e) => {
+                                if (idx === 0) {
+                                  e.target.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = `
+                                    <div class="text-center space-y-4 py-12">
+                                      <div class="w-20 h-20 mx-auto bg-slate-700 rounded-full flex items-center justify-center">
+                                        <svg class="h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                      </div>
+                                      <p class="text-slate-600 text-lg font-medium">Vista previa del sistema CRM</p>
+                                      <p class="text-slate-500 text-sm">Coloca tus capturas en /images/</p>
+                                    </div>
+                                  `;
+                                }
+                              }}
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-2 bg-white/90 hover:bg-white border-slate-300" />
+                    <CarouselNext className="right-2 bg-white/90 hover:bg-white border-slate-300" />
+                  </Carousel>
                 </div>
               </div>
             </Card>
