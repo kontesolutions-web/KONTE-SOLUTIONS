@@ -253,25 +253,44 @@ const Home = () => {
             <Card className="bg-slate-900/70 border-2 border-emerald-500/30 overflow-hidden hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300">
               <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
                 <div 
-                  className="aspect-video lg:aspect-auto bg-gradient-to-br from-emerald-500/10 to-teal-500/10 flex items-center justify-center p-8"
+                  className="aspect-video lg:aspect-auto bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center p-8"
                   style={{
                     filter: scrollY > 600 ? 'blur(0px)' : `blur(${Math.max(0, 8 - (scrollY - 400) / 50)}px)`,
                     transition: 'filter 0.5s ease-out'
                   }}
                 >
-                  <img 
-                    src="/images/dashboard-preview.png" 
-                    alt="Dashboard Finanzas" 
-                    className="max-w-full h-auto rounded-lg shadow-xl"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextElementSibling.style.display = 'block';
-                    }}
-                  />
-                  <div className="text-center space-y-4" style={{display: 'none'}}>
-                    <Calculator className="h-20 w-20 text-emerald-400 mx-auto" />
-                    <p className="text-slate-400 text-lg">Vista previa del dashboard de finanzas</p>
-                  </div>
+                  <Carousel className="w-full max-w-xl">
+                    <CarouselContent>
+                      {templateImages.finanzas.map((img, idx) => (
+                        <CarouselItem key={idx}>
+                          <div className="p-1">
+                            <img 
+                              src={img}
+                              alt={`Dashboard Finanzas ${idx + 1}`}
+                              className="w-full h-auto rounded-lg shadow-2xl"
+                              onError={(e) => {
+                                if (idx === 0) {
+                                  e.target.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = `
+                                    <div class="text-center space-y-4 py-12">
+                                      <div class="w-20 h-20 mx-auto bg-slate-700 rounded-full flex items-center justify-center">
+                                        <svg class="h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                        </svg>
+                                      </div>
+                                      <p class="text-slate-600 text-lg font-medium">Vista previa del dashboard de finanzas</p>
+                                      <p class="text-slate-500 text-sm">Coloca tus capturas en /images/</p>
+                                    </div>
+                                  `;
+                                }
+                              }}
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-2 bg-white/90 hover:bg-white border-slate-300" />
+                    <CarouselNext className="right-2 bg-white/90 hover:bg-white border-slate-300" />
+                  </Carousel>
                 </div>
                 <CardContent className="p-6 sm:p-10 space-y-6 flex flex-col justify-center">
                   <div className="text-center lg:text-left">
