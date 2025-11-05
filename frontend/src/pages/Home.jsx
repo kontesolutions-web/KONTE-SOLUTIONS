@@ -314,12 +314,14 @@ const Home = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="pt-6 text-center lg:text-left">
-                    <div className="flex items-center gap-4 mb-6 justify-center lg:justify-start">
+                  <div className="pt-6">
+                    <div className="flex items-center gap-4 mb-6 justify-center">
                       <span className="text-4xl sm:text-5xl lg:text-6xl font-bold text-emerald-400">350€</span>
                       <span className="text-lg sm:text-xl text-slate-400 font-medium">Pago único</span>
                     </div>
-                    <div id="paypal-container-RLXCEUUQ6AJXJ" className="w-full"></div>
+                    <div className="flex justify-center">
+                      <div id="paypal-container-RLXCEUUQ6AJXJ" className="w-full max-w-md"></div>
+                    </div>
                   </div>
                 </CardContent>
               </div>
