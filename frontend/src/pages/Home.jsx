@@ -405,8 +405,8 @@ const Home = () => {
                 </Button>
               </form>
               <div className="mt-8 pt-8 border-t border-emerald-500/20 text-center">
-                <p className="text-slate-400 mb-2">También puedes escribirme directamente a:</p>
-                <a href="mailto:konte.solutions@gmail.com" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">
+                <p className="text-slate-300 text-base sm:text-lg mb-3 font-medium">También puedes escribirme directamente a:</p>
+                <a href="mailto:konte.solutions@gmail.com" className="text-emerald-400 hover:text-emerald-300 transition-colors text-lg sm:text-xl font-semibold">
                   konte.solutions@gmail.com
                 </a>
               </div>
