@@ -465,7 +465,7 @@ const Home = () => {
       </section>
 
       {/* Carousel de Reseñas Infinito */}
-      <section className="py-16 sm:py-24 overflow-hidden bg-slate-900/40">
+      <section className="py-16 sm:py-24 overflow-hidden">
         <div className="mb-12 text-center space-y-4">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Lo que dicen nuestros clientes</h2>
           <p className="text-lg sm:text-xl text-slate-300 font-medium">Reseñas reales de clientes satisfechos</p>
