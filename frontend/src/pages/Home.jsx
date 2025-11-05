@@ -156,29 +156,36 @@ const Home = () => {
       </section>
 
       {/* Sobre mí / Servicios */}
-      <section id="servicios" className="py-16 sm:py-20 px-4 sm:px-6">
+      <section id="servicios" className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 sm:mb-16 space-y-3 sm:space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">Mis Servicios</h2>
-            <p className="text-base sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed px-4">
+          <div className="text-center mb-12 sm:mb-20 space-y-4 sm:space-y-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Mis Servicios</h2>
+            <p className="text-lg sm:text-xl lg:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed px-4 font-medium">
               Soy especialista en Google Sheets, Apps Script, AppSheet e integraciones web con bases de datos, 
               ayudando a empresas y emprendedores a digitalizar y automatizar procesos sin depender de software costoso.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <Card 
                   key={index} 
-                  className="bg-slate-900/50 border-emerald-500/20 hover:border-emerald-500/40 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10 backdrop-blur-sm group"
+                  className="bg-gradient-to-br from-slate-900/70 to-slate-800/50 border-2 border-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/20 backdrop-blur-sm group hover:-translate-y-2"
                 >
-                  <CardHeader>
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="h-6 w-6 text-emerald-400" />
+                  <CardHeader className="p-6 sm:p-8 space-y-4">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-500/30 to-teal-500/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-emerald-500/20">
+                      <Icon className="h-8 w-8 sm:h-10 sm:w-10 text-emerald-400" />
                     </div>
-                    <CardTitle className="text-white">{service.title}</CardTitle>
-                    <CardDescription className="text-slate-400">{service.description}</CardDescription>
+                    <CardTitle className="text-white text-xl sm:text-2xl font-bold">{service.title}</CardTitle>
+                    <CardDescription className="text-slate-300 text-base sm:text-lg leading-relaxed">{service.description}</CardDescription>
+                    <div className="flex flex-wrap gap-2 pt-2">
+                      {service.features.map((feature, idx) => (
+                        <span key={idx} className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-emerald-400 text-sm font-medium">
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
                   </CardHeader>
                 </Card>
               );
