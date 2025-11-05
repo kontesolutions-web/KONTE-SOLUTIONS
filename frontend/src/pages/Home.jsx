@@ -124,11 +124,11 @@ const Home = () => {
                   Proyecto personalizado
                 </Button>
               </div>
-              <div className="flex flex-wrap gap-4 sm:gap-6 pt-2 sm:pt-4">
+              <div className="flex flex-wrap gap-5 sm:gap-7 pt-4 sm:pt-6">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <benefit.icon className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-400 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-slate-400">{benefit.text}</span>
+                  <div key={index} className="flex items-center gap-3">
+                    <benefit.icon className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-400 flex-shrink-0" />
+                    <span className="text-sm sm:text-base lg:text-lg text-slate-300 font-medium">{benefit.text}</span>
                   </div>
                 ))}
               </div>
