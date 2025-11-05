@@ -31,33 +31,21 @@ const Home = () => {
   const services = [
     {
       icon: Calculator,
-      title: 'Automatización en Google Sheets',
-      description: 'Procesos inteligentes que ahorran tiempo y eliminan errores'
-    },
-    {
-      icon: Settings,
-      title: 'Google Apps Script',
-      description: 'Desarrollo personalizado para tus necesidades específicas'
+      title: 'Automatización & Apps Script',
+      description: 'Desarrollo personalizado en Google Sheets y Apps Script. Procesos inteligentes que ahorran tiempo y eliminan errores humanos.',
+      features: ['Google Sheets', 'Apps Script', 'Formularios Web']
     },
     {
       icon: Smartphone,
-      title: 'Implementación con AppSheet',
-      description: 'Apps web profesionales sin código complejo'
+      title: 'Apps Web & AppSheet',
+      description: 'Implementación de aplicaciones web profesionales sin código complejo. Ideal para CRM, gestión de citas y facturación.',
+      features: ['AppSheet', 'Apps Web', 'Bases de Datos']
     },
     {
       icon: BarChart3,
-      title: 'Dashboards en Looker Studio',
-      description: 'Visualización de datos en tiempo real'
-    },
-    {
-      icon: Mail,
-      title: 'Reportes Automáticos',
-      description: 'Análisis personalizados enviados automáticamente'
-    },
-    {
-      icon: Zap,
-      title: 'Integraciones Inteligentes',
-      description: 'Conecta todas tus herramientas sin esfuerzo'
+      title: 'Dashboards & Reportes',
+      description: 'Visualización de datos en tiempo real con Looker Studio. Reportes automáticos personalizados enviados directamente a tu email.',
+      features: ['Looker Studio', 'Reportes', 'Análisis']
     }
   ];
 
