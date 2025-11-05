@@ -44,6 +44,33 @@ Simplemente coloca tus imágenes en esta carpeta con los nombres exactos que se 
 - **Tamaño recomendado:** 1200x800px
 - **Formato:** PNG o JPG
 
+---
+
+## 🎨 Carousel de Logos (Partners/Clientes)
+
+### **logo-partner-1.png** hasta **logo-partner-6.png**
+- **Uso:** Logos de empresas/clientes que confían en tus servicios
+- **Tamaño:** 400x200px (ancho x alto)
+- **Formato:** PNG con fondo transparente (recomendado) o JPG
+- **Ubicación:** Carousel infinito después de la sección de servicios
+- **Nota:** El carousel se repite automáticamente sin fin
+
+---
+
+## ⭐ Carousel de Reseñas
+
+### **review-1.png** hasta **review-10.png**
+- **Uso:** Capturas de pantalla de reseñas de clientes
+- **Tamaño:** 400x300px (ancho x alto)
+- **Formato:** PNG o JPG
+- **Ubicación:** Carousel infinito antes del formulario de contacto
+- **Contenido sugerido:** 
+  - Capturas de Google Reviews
+  - Testimonios de LinkedIn
+  - Reseñas de redes sociales
+  - Emails de clientes satisfechos (con datos censurados)
+- **Nota:** El carousel se desplaza automáticamente de forma continua
+
 ## 🔄 Cómo reemplazar las imágenes:
 
 1. **Prepara tus imágenes** con los nombres exactos
