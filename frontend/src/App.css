@@ -21,30 +21,31 @@ body {
   background-attachment: fixed;
 }
 
-/* Smooth section transitions */
+/* Smooth section transitions - Horizontal gradients */
 section {
   position: relative;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(10, 10, 16, 0.3) 100%);
 }
 
 section::before,
 section::after {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
-  height: 80px;
+  top: 0;
+  bottom: 0;
+  width: 200px;
   pointer-events: none;
   z-index: 1;
 }
 
 section::before {
-  top: 0;
-  background: linear-gradient(to bottom, rgba(10, 10, 16, 0.8), transparent);
+  left: 0;
+  background: linear-gradient(to right, rgba(10, 10, 16, 0.9), transparent);
 }
 
 section::after {
-  bottom: 0;
-  background: linear-gradient(to top, rgba(10, 10, 16, 0.8), transparent);
+  right: 0;
+  background: linear-gradient(to left, rgba(10, 10, 16, 0.9), transparent);
 }
 
 /* Infinite scroll carousel animation */
