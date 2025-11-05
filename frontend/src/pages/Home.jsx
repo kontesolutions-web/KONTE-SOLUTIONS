@@ -69,6 +69,28 @@ const Home = () => {
     ]
   };
 
+  const logoImages = [
+    '/images/logo-partner-1.png',
+    '/images/logo-partner-2.png',
+    '/images/logo-partner-3.png',
+    '/images/logo-partner-4.png',
+    '/images/logo-partner-5.png',
+    '/images/logo-partner-6.png'
+  ];
+
+  const testimonialImages = [
+    '/images/review-1.png',
+    '/images/review-2.png',
+    '/images/review-3.png',
+    '/images/review-4.png',
+    '/images/review-5.png',
+    '/images/review-6.png',
+    '/images/review-7.png',
+    '/images/review-8.png',
+    '/images/review-9.png',
+    '/images/review-10.png'
+  ];
+
   const benefits = [
     { icon: CheckCircle2, text: 'Sin costes de mantenimiento' },
     { icon: Shield, text: 'Todo en tu Google Workspace' },
