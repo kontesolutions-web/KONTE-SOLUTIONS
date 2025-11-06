@@ -474,11 +474,11 @@ const Home = () => {
           <div className="flex gap-6 sm:gap-8 animate-scroll">
             {/* Duplicamos las reseñas para efecto infinito */}
             {[...testimonialImages, ...testimonialImages].map((review, idx) => (
-              <div key={idx} className="flex-shrink-0 w-[300px] sm:w-[400px] h-[225px] sm:h-[300px] overflow-hidden">
+              <div key={idx} className="flex-shrink-0 w-[300px] sm:w-[400px] h-[225px] sm:h-[300px] group cursor-pointer">
                 <img 
                   src={review}
                   alt={`Reseña cliente ${(idx % testimonialImages.length) + 1}`}
-                  className="w-full h-full object-cover rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="w-full h-full object-cover rounded-2xl shadow-xl transition-all duration-300 border-2 border-transparent group-hover:border-emerald-400 group-hover:shadow-2xl group-hover:shadow-emerald-500/30 group-hover:-translate-y-2"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     const parent = e.target.parentElement;
