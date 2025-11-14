@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/KONTE-SOLUTIONS/static/css/main.bbea92d0.css",
-    "main.js": "/KONTE-SOLUTIONS/static/js/main.a6ed382b.js",
+    "main.js": "/KONTE-SOLUTIONS/static/js/main.8efd2cd6.js",
     "index.html": "/KONTE-SOLUTIONS/index.html",
     "main.bbea92d0.css.map": "/KONTE-SOLUTIONS/static/css/main.bbea92d0.css.map",
-    "main.a6ed382b.js.map": "/KONTE-SOLUTIONS/static/js/main.a6ed382b.js.map"
+    "main.8efd2cd6.js.map": "/KONTE-SOLUTIONS/static/js/main.8efd2cd6.js.map"
   },
   "entrypoints": [
     "static/css/main.bbea92d0.css",
-    "static/js/main.a6ed382b.js"
+    "static/js/main.8efd2cd6.js"
   ]
 }
