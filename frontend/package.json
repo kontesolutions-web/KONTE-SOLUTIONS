@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://kontesolutions-web.io/KONTE-SOLUTIONS/",
+  "homepage": "/KONTE-SOLUTIONS/",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
