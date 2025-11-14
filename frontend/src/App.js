@@ -55,9 +55,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/KONTE-SOLUTIONS">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        {/* NOTA: He movido el componente Home fuera de Routes para simplificar,
+           ya que solo tienes una ruta. Si añades más rutas en el futuro,
+           puedes volver a ponerlo dentro. */}
+        <Home />
       </BrowserRouter>
     </div>
   );
