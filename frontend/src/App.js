@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/KONTE-SOLUTIONS">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
