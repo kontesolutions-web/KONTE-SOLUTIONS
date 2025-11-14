@@ -1,7 +1,7 @@
 {
-  "homepage": "https://kontesolutions-web.github.io/KONTE-SOLUTIONS",
-  "name": "frontend",
+  "homepage": "./",
   "version": "0.1.0",
+  "name": "frontend",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
